@@ -2,18 +2,30 @@
 using namespace std;
 #include "teacher.h"
 #include "student.h"
-void show(teacher *t)
+void showTeacher(teacher *t)
 {
-	for (int i = 0; i<3; i++, t++)
+	student *st[5];
+	for (int i = 0; i < 5; i++, t++) {
 		cout << t->getName() << " " << t->getRese();
+		st[i] = t->getAdd();
+	}
+	for (int i = 0; i < 5; i++)
+		cout << st[i]->getName() << st[i]->getId() << st[i]->getAge();
 }
 
+//void showStudent(student *s)
+//{
+//	for (int i = 0; i < 5; i++, s++)
+//		cout << s->getName() << s->getId() << s->getAge() << endl;
+//}
 int main()
 {
 
-	teacher tch[3] = {teacher("你好老师","移动应用"),
+	teacher tch[5] = {teacher("你好老师","移动应用"),
 					  teacher ("那天老师","互联网"),
-					  teacher ("明天老师","电脑")};
+					  teacher ("昨天老师","电脑"),
+					  teacher("天老师","互联"), 
+		              teacher("那老师","互网")};
 	student st[5] = {
 		student("小明","0001",23),
 		student("小红","0002",24),
@@ -21,7 +33,8 @@ int main()
 		student("小黑","0003",34),
 		student("小黑","0003",34)
 	};
-	show(&tch[0]);
+	showTeacher(&tch[0]);
+	/*showStudent(&st[0]);*/
 	system("pause");
 	return 0;
 }

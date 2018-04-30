@@ -10,5 +10,8 @@ class student
 	public:
 		student();
 		student(string ,string ,int);
+		int getAge();
+		string getName();
+		string getId();
 
 };

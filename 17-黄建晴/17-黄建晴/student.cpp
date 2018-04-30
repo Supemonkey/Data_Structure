@@ -18,3 +18,18 @@ student::student(string name, string id, int age)
 	this->age = age;
 }
 
+
+int student::getAge()
+{
+	return age;
+}
+
+string student::getName()
+{
+	return name;
+}
+
+string student::getId()
+{
+	return id;
+}
