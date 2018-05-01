@@ -4,7 +4,7 @@ using namespace std;
 
 
 student::student()
-{
+{//Ä¬ÈÏÎª-1
 	this->name = "-1";
 	this->id = "-1";
 	this->age = -1;
@@ -17,7 +17,6 @@ student::student(string name, string id, int age)
 	this->id = id;
 	this->age = age;
 }
-
 
 int student::getAge()
 {
@@ -33,3 +32,6 @@ string student::getId()
 {
 	return id;
 }
+
+
+

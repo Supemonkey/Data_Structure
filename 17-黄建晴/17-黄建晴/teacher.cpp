@@ -9,17 +9,18 @@ teacher::teacher(string name, string rese)
 	this->rese = rese;
 	
 }
-string teacher::getName()
+string teacher::getTName()
 {
 	return name;
 }
 
-string teacher::getRese()
+string teacher::getTRese()
 {
 	return rese;
 }
 
-student * teacher::getAdd()
-{
-	return &st[0];
+void teacher::getArry(student *p)
+{ 
+		cout <<p->getName() <<" "<< p->getId()<<" "<<p->getAge() <<endl;	
 }
+

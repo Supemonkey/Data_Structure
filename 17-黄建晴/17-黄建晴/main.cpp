@@ -2,15 +2,12 @@
 using namespace std;
 #include "teacher.h"
 #include "student.h"
-void showTeacher(teacher *t)
+void showTeacher(teacher *p,student *x)
 {
-	student *st[5];
-	for (int i = 0; i < 5; i++, t++) {
-		cout << t->getName() << " " << t->getRese();
-		st[i] = t->getAdd();
+	for (int i = 0; i < 5; i++,p++,x++) {
+		cout << p->getTName() << " " << p->getTRese() << endl;
+		p->getArry(x);
 	}
-	for (int i = 0; i < 5; i++)
-		cout << st[i]->getName() << st[i]->getId() << st[i]->getAge();
 }
 
 //void showStudent(student *s)
@@ -33,7 +30,7 @@ int main()
 		student("Ð¡ºÚ","0003",34),
 		student("Ð¡ºÚ","0003",34)
 	};
-	showTeacher(&tch[0]);
+	showTeacher(&tch[0],&st[0]);
 	/*showStudent(&st[0]);*/
 	system("pause");
 	return 0;

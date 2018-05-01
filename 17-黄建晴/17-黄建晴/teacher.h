@@ -10,8 +10,8 @@ class teacher
 		student st[5];
 	public:
 		teacher(string name, string rese);
-		string getName();
-		string getRese();
-		student  *getAdd();
+		string getTName();
+		string getTRese();
+		void getArry(student * p);
 };
 
