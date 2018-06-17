@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Codelite" Database="" Version="10.0.0">
+  <Project Name="TeskCode" Path="TeskCode/TeskCode.project" Active="No"/>
+  <Project Name="Sort" Path="Sort/Sort.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="TeskCode" ConfigName="Debug"/>
+      <Project Name="Sort" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="TeskCode" ConfigName="Release"/>
+      <Project Name="Sort" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

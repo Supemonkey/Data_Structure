@@ -1,0 +1,1 @@
+./Debug/BubleSort.cpp.o ./Debug/SelectSort.cpp.o ./Debug/main.cpp.o   
