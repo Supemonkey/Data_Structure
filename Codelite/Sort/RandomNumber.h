@@ -1,6 +1,9 @@
 #ifndef _RandomNumber_H_
 #define _RandomNumber_H_
 #include <ctime>
+#include "BubleSort.cpp"
+#include "SelectSort.cpp"
+//为什么需要包含头文件
 
 template <typename T>
 void BubleSort(T array[], int n);
